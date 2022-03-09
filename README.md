@@ -1,16 +1,16 @@
 # festivalproject
 
-A new Flutter project.
 
-## Getting Started
+void main(){
 
-This project is a starting point for a Flutter application.
+  test("getData ", () async{
+    final homeViewModel = HomeViewModel();
+    final response = await homeViewModel.getData();
+    expect(response is HomeScreenModel, true);
+  });
+}
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Simulator Screen Shot - iPhone 12 - 2022-03-09 at 23 21 58](https://user-images.githubusercontent.com/64318805/157529205-ff2c72a0-8e3b-4271-b475-93ec86cddf29.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
